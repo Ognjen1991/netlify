@@ -30,7 +30,7 @@
     async function fetchAirbnbUnavailableDates() {
       try {
         // Fetch Airbnb unavailable dates using Netlify function
-        const response = await fetch('/.netlify/functions/getAirbnbUnavailableDates');
+        const response = await fetch('/netlify/functions/getAirbnbUnavailableDates');
         const data = await response.json();
         return data;
       } catch (error) {
